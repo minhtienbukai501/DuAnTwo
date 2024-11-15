@@ -3,6 +3,7 @@
     --fontsize-14: 14px;
     --fontsize-18: 18px;
     --fontsize-16: 16px;
+    --desc-color: #5f5b53;
 }
 
 * {
@@ -64,6 +65,10 @@ header {
 
 .navbar .btn {
     margin-left: 49px;
+}
+
+.navbar .btn:hover {
+    background-color: rgba(0, 0, 0, 0.86);
 }
 
 .navbar .list .item {
@@ -228,7 +233,7 @@ header .modal-ui {
 }
 
 .ui-info .label:first-child {
-    color: #5f5b53;
+    color: var(----desc-color);
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -258,4 +263,146 @@ header .modal-ui {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
+}
+
+.info .desc-two {
+    margin-top: 48px;
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.info .desc-three {
+    margin-top: 8px;
+    color: var(--desc-color);
+
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.info .desc-three strong {
+    color: var(--primary-color);
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+strong + strong {
+    margin-left: 28px;
+}
+
+.popular {
+    padding: 200px 0;
+}
+
+.popular .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .info .title {
+    color: var(--primary-color);
+
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.popular .info .desc {
+    margin-top: 16px;
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    gap: 30px;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.popular .course-item .thumb-course {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+}
+
+.popular .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .head .title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.popular .course-list .desc {
+    color: var(----desc-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.popular .course-item .rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .star {
+    height: 18px;
+}
+
+.popular .rating .value {
+    margin-left: 4px;
+    color: #fea31b;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.popular .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .btn-course {
+    font-size: 1.4rem;
+
+    min-width: 118px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn.active {
+    background: #ffb900;
 }
