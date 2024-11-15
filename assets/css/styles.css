@@ -235,3 +235,27 @@ header .modal-ui {
     font-weight: 400;
     line-height: 26px;
 }
+
+.info .action-content {
+    display: flex;
+    align-items: center;
+}
+
+.info .action-content .watch {
+    width: 40px;
+    height: 40px;
+}
+
+.info .action-content img {
+    margin-top: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.info .action-content .desc {
+    color: #171100;
+
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+}
