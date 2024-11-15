@@ -180,6 +180,12 @@ header .action .play {
     object-fit: cover;
 }
 
+.action-content {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .action-content .play {
     width: 40px;
     height: 40px;
@@ -337,6 +343,11 @@ strong + strong {
     border-radius: 12px;
 }
 
+.popular .control-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 .popular .course-item .thumb-course {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
