@@ -19,3 +19,14 @@ for (const btnCourse of btnCoursesE) {
         btnCourse.style.backgroundColor = "#171100";
     };
 }
+
+const btnReadMoreE = document.querySelectorAll(".btn-readmore");
+for (const btn of btnReadMoreE) {
+    btn.onmouseover = () => {
+        btn.style.backgroundColor = "#ffb900";
+    };
+
+    btn.onmouseout = () => {
+        btn.style.backgroundColor = "#171100";
+    };
+}
